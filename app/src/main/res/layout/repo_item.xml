@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardUseCompatPadding="true"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/ivOwnerImage"
+            android:layout_width="100dp"
+            tools:src="@tools:sample/avatars"
+            android:layout_height="100dp"/>
+
+    <TextView
+            android:id="@+id/tvOwnerName"
+            android:layout_width="wrap_content"
+            tools:text="@tools:sample/full_names"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ivOwnerImage"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tvRepoName"
+            android:layout_width="wrap_content"
+            tools:text="@tools:sample/full_names"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ivOwnerImage"
+            android:layout_alignBottom="@id/ivOwnerImage"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

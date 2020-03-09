@@ -8,7 +8,7 @@
         tools:context=".Activities.OwnerActivity">
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
             android:id="@+id/cvRepoOwner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,10 +40,10 @@
 
         </RelativeLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
             android:layout_below="@id/cvRepoOwner"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
@@ -63,16 +63,16 @@
                   android:layout_marginBottom="8dp"
                   android:layout_height="wrap_content"/>
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvRepo"
                 android:layout_width="match_parent"
                 tools:listitem="@layout/contributor_item"
                 android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

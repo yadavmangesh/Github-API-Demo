@@ -2,7 +2,7 @@ package com.mangesh.gitexpo.Adapter
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import com.mangesh.gitexpo.Pojo.Repo
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.repo_item.view.*
 
-class PublicRepoAdapter(val context: Context): RecyclerView.Adapter<PublicRepoAdapter.MyViewHolder>() {
+class PublicRepoAdapter(val context: Context): androidx.recyclerview.widget.RecyclerView.Adapter<PublicRepoAdapter.MyViewHolder>() {
 
     var publicRepoList:MutableList<Repo> = arrayListOf()
 
@@ -47,5 +47,5 @@ class PublicRepoAdapter(val context: Context): RecyclerView.Adapter<PublicRepoAd
         notifyDataSetChanged()
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class MyViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView)
 }

@@ -1,11 +1,11 @@
 package com.mangesh.gitexpo.Activities
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
-import android.support.v7.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.mangesh.gitexpo.Adapter.ContributorAdapter
 import com.mangesh.gitexpo.GitViewModel
 import com.mangesh.gitexpo.R
@@ -39,7 +39,7 @@ class OwnerActivity : AppCompatActivity() {
         gitViewModel=ViewModelProviders.of(this).get(GitViewModel::class.java)
 
         rvContributors.apply {
-            layoutManager=GridLayoutManager(this@OwnerActivity,3)
+            layoutManager= androidx.recyclerview.widget.GridLayoutManager(this@OwnerActivity, 3)
             adapter=contributorAdapter
         }
 

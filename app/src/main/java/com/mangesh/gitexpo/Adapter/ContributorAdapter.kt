@@ -2,7 +2,7 @@ package com.mangesh.gitexpo.Adapter
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +13,7 @@ import com.mangesh.gitexpo.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.contributor_item.view.*
 
-class ContributorAdapter(val context: Context) : RecyclerView.Adapter<ContributorAdapter.ContributorViewHolder>() {
+class ContributorAdapter(val context: Context) : androidx.recyclerview.widget.RecyclerView.Adapter<ContributorAdapter.ContributorViewHolder>() {
 
     private var contributorList:MutableList<Contributor> = mutableListOf()
 
@@ -48,5 +48,5 @@ class ContributorAdapter(val context: Context) : RecyclerView.Adapter<Contributo
         notifyDataSetChanged()
     }
 
-    class ContributorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class ContributorViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView)
 }

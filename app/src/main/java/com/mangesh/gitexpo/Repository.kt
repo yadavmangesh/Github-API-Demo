@@ -1,6 +1,6 @@
 package com.mangesh.gitexpo
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import android.util.Log
 import com.mangesh.gitexpo.Pojo.Contributor
 import com.mangesh.gitexpo.Pojo.Owner
@@ -23,9 +23,9 @@ class Repository {
         api= RetroClient.getClient()
     }
 
-    fun getListofPublicRepos():MutableLiveData<MutableList<Repo>>{
+    fun getListofPublicRepos(LIMIT:Int):MutableLiveData<MutableList<Repo>>{
 
-        api?.getPublicRepositories()?.enqueue(object :retrofit2.Callback<MutableList<Repo>>{
+        api?.getPublicRepositories(LIMIT)?.enqueue(object :retrofit2.Callback<MutableList<Repo>>{
             override fun onFailure(call: Call<MutableList<Repo>>, t: Throwable) {
                Log.d("Repository ","getPublicRepositories onFailure")
             }
